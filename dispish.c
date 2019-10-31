@@ -14,6 +14,7 @@
 #include    <stdio.h>
 #include    <sys/types.h>
 #include    <sys/stat.h>
+#include    <stdlib.h>
 
 #define	ID    "ID block for multi volume ish file"
 
@@ -93,7 +94,7 @@ void disp_date_time() {
 	if (tim & 0x00800000 )
 	    tim |= 0xff000000;
 	i = tim % 3600L;
-	printf("= %ld:%02d:%02d>)", tim/3600, i/60, i%60);
+	printf("= %d:%02d:%02d>)", tim/3600, i/60, i%60);
     }
     else
 	printf("is not available>)");
