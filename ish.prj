@@ -1,0 +1,8 @@
+ish.c
+crc.c
+decode.c
+encode.c
+jis7.c
+jis8.c
+sjis.c
+njis.c
