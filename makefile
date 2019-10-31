@@ -28,7 +28,7 @@
 #
 #	SUNOS 4.1.1B / NEWS-OS 4.0C
 #
-CFLAGS = -g -DNAMELOWER
+#CFLAGS = -g -DNAMELOWER
 
 #
 #	SUNOS 5.4(Solaris 2.4), gcc ver 2.6.3
@@ -40,6 +40,11 @@ CFLAGS = -g -DNAMELOWER
 #	Macintosh A/UX 3.0
 #
 #CFLAGS = -O -DTZSET -DNAMELOWER -DNOBCOPY
+
+#
+#       GNU/Linux x86
+#
+CFLAGS = -O -DNOINDEX -DTZSET -DNAMELOWER -DNOBCOPY
 
 #
 LDFLAGS = -g

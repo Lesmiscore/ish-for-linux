@@ -34,7 +34,8 @@
 #define    rindex    strrchr
 #endif
 
-extern int errno;
+#include <stdio.h>
+#include <stdlib.h>
 
 void help(), puttitle();
 
@@ -52,7 +53,7 @@ char *filename = "file.ish";
 int    mline = 0;
 int    lfflag = 0;
 
-FILE *opath = stdout;
+FILE *opath;
 FILE *ipath;
 char name[NAMLEN];
 
@@ -69,6 +70,7 @@ void main(argc, argv)
 int argc;
 char **argv;
 {
+    opath = stdout;
     int oflg = 0, n = 0, fc = 0;
     char *p;
     FILE *fopen();
