@@ -17,6 +17,7 @@
 #else
 #include <dirent.h>
 #endif
+#include <stdlib.h>
 #include "ish.h"
 
 extern unsigned long    fsize;
